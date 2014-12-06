@@ -1,0 +1,31 @@
+{
+  "name": "express-session-benchmarks",
+  "version": "1.0.0",
+  "description": "express-session-benchmarks ==========================",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "cassandra-driver": "^1.0.2",
+    "connect": "^3.3.3",
+    "connect-cassandra-cql": "^0.2.1",
+    "connect-redis": "^2.1.0",
+    "connect-session-knex": "^1.0.2",
+    "connect-sqlite3": "^0.9.3",
+    "express-session": "^1.9.2",
+    "sqlite3": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llambda/express-session-benchmarks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llambda/express-session-benchmarks/issues"
+  },
+  "homepage": "https://github.com/llambda/express-session-benchmarks"
+}
