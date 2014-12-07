@@ -2,6 +2,17 @@
 var Promise = require('bluebird')
 Promise.longStackTraces();
 
+/*
+
+cqlsh>
+
+CREATE KEYSPACE sessions
+WITH REPLICATION = { 'class' : 'SimpleStrategy',
+'replication_factor' : 1 }
+;
+
+*/
+
 
 var session = require('express-session')
 var cassandra = require('cassandra-driver');
@@ -18,10 +29,10 @@ console.time('bench'+count);
 var store = Promise.promisifyAll(new CassandraCqlStore({client: client}));
 
 for (; i < count; i++) {
-  tasks.push(store.setAsync('testsession'+i, {cookie: {maxAge:2000}, name: 'sample name'}));
+	tasks.push(store.setAsync('testsession'+i, {cookie: {maxAge:2000}, name: 'sample name'}));
 }
 
 Promise.all(tasks).then(function() {
-  console.timeEnd('bench'+count);
-  process.exit(0);
+	console.timeEnd('bench'+count);
+	process.exit(0);
 });
