@@ -18,5 +18,9 @@ bench10000: 16678ms
 
 NeDB:
 bench10000: 32434ms
+
+session-file-store:
+bench10000: 1220ms
+
 ```
 
