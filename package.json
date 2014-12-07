@@ -8,6 +8,7 @@
     "cassandra-driver": "^1.0.2",
     "connect": "^3.3.3",
     "connect-cassandra-cql": "^0.2.1",
+    "connect-nedb-session": "0.0.3",
     "connect-redis": "^2.1.0",
     "connect-session-knex": "^1.0.2",
     "connect-sqlite3": "^0.9.3",
