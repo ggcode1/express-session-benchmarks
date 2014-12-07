@@ -1,26 +1,22 @@
 express-session-benchmarks
 ==========================
-```
-cassandra
-bench10000: 4741ms
+10,000 Inserts:
 
-connect-session-knex postgres 9.4
-bench10000: 4094ms
+[connect-redis](https://www.npmjs.org/package/connect-redis): 329ms
 
-redis
-bench10000: 329ms
+[session-file-store](https://www.npmjs.org/package/session-file-store): 1220ms
 
-sqlite3
-bench10000: 8207ms
+[connect-session-knex w/postgres 9.4](https://www.npmjs.org/package/connect-session-knex): 4094ms
 
-connect-session-knex sqlite3
-bench10000: 16678ms
+[connect-cassandra-cql](https://www.npmjs.org/package/connect-cassandra-cql): 4741ms
 
-NeDB:
-bench10000: 32434ms
+[connect-sqlite3](https://www.npmjs.org/package/connect-sqlite3): 8207ms
 
-session-file-store:
-bench10000: 1220ms
+[connect-session-knex w/sqlite3](https://www.npmjs.org/package/connect-session-knex): 16678ms
 
-```
+[connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session): : 32434ms
+
+[connect-nedb-session-two](https://www.npmjs.org/package/connect-nedb-session-two): 72670ms
+
+
 
