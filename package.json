@@ -9,10 +9,13 @@
     "connect": "^3.3.3",
     "connect-cassandra-cql": "^0.2.1",
     "connect-nedb-session": "0.0.3",
+    "connect-nedb-session-two": "^1.0.2",
+    "connect-pg-simple": "^2.1.1",
     "connect-redis": "^2.1.0",
     "connect-session-knex": "^1.0.2",
     "connect-sqlite3": "^0.9.3",
     "express-session": "^1.9.2",
+    "pg": "^4.1.0",
     "session-file-store": "0.0.2",
     "sqlite3": "^3.0.4"
   },
