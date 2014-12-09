@@ -12,7 +12,7 @@ express-session-benchmarks
 
 [connect-sqlite3](https://www.npmjs.org/package/connect-sqlite3): 8207ms
 
-[connect-session-knex w/sqlite3](https://www.npmjs.org/package/connect-session-knex): 16678ms
+[connect-session-knex 1.0.5 w/sqlite3](https://www.npmjs.org/package/connect-session-knex): 10049ms 
 
 [connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session): : 32434ms
 

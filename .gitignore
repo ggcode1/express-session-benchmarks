@@ -29,4 +29,5 @@ node_modules
 
 *.sqlite
 *.db
+*.nedb
 sessions
