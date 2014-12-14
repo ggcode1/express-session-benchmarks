@@ -12,10 +12,15 @@ io.js master (2014-12-07): 319ms
 Node v0.10.33: 1220ms
 io.js master (2014-12-07): 1074ms
 ```
+[connect-session-knex w/Mariadb 10.0.15](https://www.npmjs.org/package/connect-session-knex):
+```
+Node v0.10.33: 3775ms
+io.js master (2014-12-14): 3661ms
+```
 [connect-session-knex w/postgres 9.3.5](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 4094ms
-io.js master (2014-12-07): 3759ms
+io.js master (2014-12-14): 3734ms
 ```
 [connect-cassandra-cql](https://www.npmjs.org/package/connect-cassandra-cql): 4741ms
 ```
