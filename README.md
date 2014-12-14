@@ -38,7 +38,7 @@ Node v0.10.33: 11204ms
 ```
 [connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session):
 ```
-Node v0.10.33: 32434ms
+Node v0.10.33: 78691ms
 io.js master (2014-12-14): 73505ms
 ```
 [connect-nedb-session-two](https://www.npmjs.org/package/connect-nedb-session-two):
