@@ -12,12 +12,12 @@ io.js master (2014-12-07): 319ms
 Node v0.10.33: 1220ms
 io.js master (2014-12-07): 1074ms
 ```
-[connect-session-knex w/Mariadb 10.0.15](https://www.npmjs.org/package/connect-session-knex):
+[connect-session-knex with Mariadb 10.0.15](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 3775ms
 io.js master (2014-12-14): 3661ms
 ```
-[connect-session-knex w/postgres 9.4](https://www.npmjs.org/package/connect-session-knex):
+[connect-session-knex with PostgreSQL 9.4](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 4210ms
 io.js master (2014-12-14): 3844ms
@@ -32,7 +32,7 @@ io.js master (2014-12-07): 4647ms
 Node v0.10.33: 8207ms
 ```
 
-[connect-session-knex 1.0.5 w/sqlite3](https://www.npmjs.org/package/connect-session-knex):
+[connect-session-knex 1.0.5 with Sqlite3](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 11204ms
 ```
