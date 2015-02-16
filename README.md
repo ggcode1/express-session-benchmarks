@@ -41,6 +41,7 @@ io.js 1.2.1: 4340ms
 [connect-sqlite3](https://www.npmjs.org/package/connect-sqlite3):
 ```
 Node v0.10.33: 8207ms
+Node v0.12: 7906ms
 iojs v1.2.0: 8421ms
 ```
 
