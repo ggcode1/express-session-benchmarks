@@ -41,11 +41,13 @@ io.js 1.2.1: 4340ms
 [connect-sqlite3](https://www.npmjs.org/package/connect-sqlite3):
 ```
 Node v0.10.33: 8207ms
+iojs v1.2.0: 8421ms
 ```
 
 [connect-session-knex 1.0.5 with Sqlite3](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 11204ms
+iojs v1.2.0: 9182ms
 ```
 [connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session):
 ```
