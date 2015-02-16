@@ -44,7 +44,7 @@ Node v0.10.33: 8207ms
 iojs v1.2.0: 8421ms
 ```
 
-[connect-session-knex 1.0.5 with Sqlite3](https://www.npmjs.org/package/connect-session-knex):
+[connect-session-knex 1.0.8 with Sqlite3](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 11204ms
 iojs v1.2.0: 9182ms
