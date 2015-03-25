@@ -16,20 +16,19 @@ var knex = require('knex')({
   }
 })
 
-var Promise = require('bluebird')
-var fs = require('fs')
+var Promise = require('bluebird');
 var count = 10000
-var i=0
+var i = 0;
 var tasks = []
 
  knex.schema.dropTableIfExists('sessions').then(function () {
+'use strict';
 
-
-  store = new KnexStore({
+  var store = new KnexStore({
     knex: knex
-  })
+  });
 
-  console.time('bench'+count)
+  console.time('bench' + count);
 
 
   for (; i < count; i++) {
@@ -37,8 +36,7 @@ var tasks = []
   }
 
   Promise.all(tasks, {concurrency: 1}).then(function() {
-    console.timeEnd('bench'+count);
-    process.exit();
-  })
-})
-
+    console.timeEnd('bench' + count);
+    process.exit(0);
+  });
+});
