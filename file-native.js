@@ -1,4 +1,4 @@
-var promisify = require('native-promisify');
+var promisify = require('thenify-all');
 
 var session = require('express-session');
 var Store = require('session-file-store')(session);
