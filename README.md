@@ -53,8 +53,6 @@ io.js 1.8.1: 7679ms
 ```
 Node v0.10.33: 11204ms
 iojs v1.2.0: 9182ms
-io.js 1.8.1: 7679ms
-
 ```
 [connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session):
 ```
