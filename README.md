@@ -8,6 +8,7 @@ Node v0.10.33: 329ms
 io.js master (2014-12-07): 319ms
 Node v0.12: 411ms
 io.js 1.2.1: 466ms
+io.js 1.8.1: 308ms
 ```
 [session-file-store](https://www.npmjs.org/package/session-file-store):
 ```
@@ -15,6 +16,7 @@ Node v0.10.33: 1220ms
 io.js master (2014-12-07): 1074ms
 Node v0.12: 931ms
 io.js 1.2.1: 1073ms
+io.js 1.8.1: 872ms
 ```
 [connect-session-knex with Mariadb 10.0.15](https://www.npmjs.org/package/connect-session-knex):
 ```
@@ -22,6 +24,7 @@ Node v0.10.33: 3775ms
 io.js master (2014-12-14): 3661ms
 Node v0.12: 2470ms
 io.js 1.2.1: 2227ms
+io.js 1.8.1: 3150ms
 ```
 [connect-session-knex with PostgreSQL 9.4](https://www.npmjs.org/package/connect-session-knex):
 ```
@@ -29,7 +32,7 @@ Node v0.10.33: 4210ms
 io.js master (2014-12-14): 3844ms
 Node v0.12: 2432ms
 io.js 1.2.1: 2282ms
-
+io.js 1.8.1: 2455ms
 ```
 [connect-cassandra-cql](https://www.npmjs.org/package/connect-cassandra-cql):
 ```
@@ -43,12 +46,15 @@ io.js 1.2.1: 4340ms
 Node v0.10.33: 8207ms
 Node v0.12: 7906ms
 iojs v1.2.0: 8421ms
+io.js 1.8.1: 7679ms
 ```
 
 [connect-session-knex 1.0.8 with Sqlite3](https://www.npmjs.org/package/connect-session-knex):
 ```
 Node v0.10.33: 11204ms
 iojs v1.2.0: 9182ms
+io.js 1.8.1: 7679ms
+
 ```
 [connect-nedb-session](https://www.npmjs.org/package/connect-nedb-session):
 ```
