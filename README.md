@@ -34,7 +34,7 @@ Node v0.12: 2432ms
 io.js 1.2.1: 2282ms
 io.js 1.8.1: 2455ms
 ```
-[connect-rethinkdb](https://github.com/llambda/connect-rethinkdb):
+[session-rethinkdb](https://github.com/llambda/session-rethinkdb):
 ```
 io.js 2.0.0: 4203ms
 ```
