@@ -2,7 +2,7 @@ var Promise = require('bluebird')
 var express = require('express');
 var session = require('express-session');
 // var RDBStore = require('express-session-rethinkdb')(session);
-var RDBStore = require('connect-rethinkdb')(session);
+var RDBStore = require('session-rethinkdb')(session);
 
 var store = Promise.promisifyAll(new RDBStore({
   clientOptions: {
@@ -19,6 +19,8 @@ var count = 10000
 var tasks = []
 console.time('bench'+count)
 
+store.on('connect', function () {
+
 for (var i = 0; i < count; i++) {
   tasks.push(store.setAsync('testsession'+i, {cookie: {maxAge:2000, expires: new Date() }, name: 'sample name'}))
 }
@@ -28,3 +30,4 @@ Promise.all(tasks, {concurrency: 1}).then(function() {
   process.exit();
 })
 
+})
