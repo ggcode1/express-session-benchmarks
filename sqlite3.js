@@ -5,18 +5,26 @@ var SQLiteStore = require('connect-sqlite3')(session)
 var Promise = require('bluebird')
 var fs = require('fs')
 var count = 10000
-var i=0
+var i = 0
 var tasks = []
 
-console.time('bench'+count)
+console.time('bench' + count)
 
 store = Promise.promisifyAll(new SQLiteStore)
 
 for (; i < count; i++) {
-  tasks.push(store.setAsync('testsession'+i, {cookie: {maxAge:2000, expires: new Date()  }, name: 'sample name'}))
+    tasks.push(store.setAsync('testsession' + i, {
+        cookie: {
+            maxAge: 2000,
+            expires: new Date()
+        },
+        name: 'sample name'
+    }))
 }
 
-Promise.all(tasks, {concurrency: 1}).then(function() {
-  console.timeEnd('bench'+count);
-  process.exit();
+Promise.all(tasks, {
+    concurrency: 1
+}).then(function() {
+    console.timeEnd('bench' + count);
+    process.exit();
 })
